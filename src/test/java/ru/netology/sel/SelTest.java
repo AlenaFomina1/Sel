@@ -77,7 +77,7 @@ class SelTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
         String text = driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText();
-        assertEquals("Поле обязательно для заполнения", text.trim());
+        assertEquals("Поле обязательно для з", text.trim());
     }
 
     @Test
@@ -102,5 +102,3 @@ class SelTest {
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", text.trim());
     }
 }
-
-
