@@ -77,7 +77,7 @@ class SelTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
         String text = driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText();
-        assertEquals("Поле обязательно для з", text.trim());
+        assertEquals("Поле обязательно для заполнения", text.trim());
     }
 
     @Test
